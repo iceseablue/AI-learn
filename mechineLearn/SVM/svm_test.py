@@ -32,7 +32,9 @@ if __name__ == "__main__":
         train_test_split(x, y, random_state=1, train_size=0.6)
     # 分类器
     # clf = svm.SVC(C=0.1, kernel='linear', decision_function_shape='ovr')
-    clf = svm.SVC(C=0.8, kernel='rbf', gamma=20, decision_function_shape='ovr')
+    clf = svm.SVC(C=0.1, kernel='rbf', decision_function_shape='ovr')
+    print clf
+    # clf = svm.SVC(C=0.8, kernel='rbf', gamma=20, decision_function_shape='ovr')
     clf.fit(x_train, y_train.ravel())
     # 准确率
     print "accuray:", clf.score(x_train, y_train)  # 精度
