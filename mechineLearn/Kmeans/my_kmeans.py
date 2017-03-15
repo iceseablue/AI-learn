@@ -93,6 +93,10 @@ def predict_data(data_set, centroids, dist_meas=dist_calculate):
     return min_index, centroids[min_index, :].A[0]
 
 
+def draw_2D_chart(x_data, y_data):
+
+
+
 if __name__ == "__main__":
     path = '../SVM/8.iris.data'
     k = 3
